@@ -203,6 +203,15 @@ Screenshot: Networking configuration.
 
 # PART D — AZURE RISK ASSESSMENT
 
+| Asset | Vulnerability | Threat | Likelihood | Impact | Risk Score | Risk Level | Recommended Mitigation |
+| :--- | :--- | :--- | :---: | :---: | :---: | :--- | :--- |
+| Azure Blob Storage | Anonymous access enabled* | Unauthorized data access | 4 | 5 | 20 | Critical | Disable anonymous access |
+| Azure Storage | Data protection disabled* | Permanent data loss | 3 | 4 | 12 | High | Enable appropriate protection |
+| Azure Storage | Excessive permissions* | Unauthorized modification | 3 | 4 | 12 | High | Apply least privilege |
+| Azure Storage | Unrestricted network access* | External attack/access | 3 | 4 | 12 | High | Restrict network access |
+
+
+# PART E — COMPARISON OF AWS AND AZURE
 
 | Security Control | AWS S3 | Azure Blob Storage |
 | :--- | :--- | :--- |
@@ -215,18 +224,14 @@ Screenshot: Networking configuration.
 | Network security | Bucket/network controls | Storage networking / private endpoints |
 
 
+# PART F — FINAL RISK SUMMARY
 
-# PART E — COMPARISON OF AWS AND AZURE
-Prepare a final comparison.
-Security Control	AWS S3	Azure Blob Storage
-Public access control	Block Public Access	Anonymous access control
-Encryption	SSE-S3 / SSE-KMS	Azure Storage encryption
-Versioning	S3 Versioning	Blob Versioning
-Data recovery	Versioning / other controls	Soft Delete / Versioning
-Access control	IAM / Bucket policies	RBAC / Access policies
-Logging/Monitoring	S3 logging / Cloud monitoring	Azure monitoring/logging
-Network security	Bucket/network controls	Storage networking / private endpoints
+| Cloud | Asset | Major Risk | Risk Level | Mitigation |
+| :--- | :--- | :--- | :---: | :--- |
+| AWS | S3 Bucket | Versioning disabled | High | Enable versioning |
+| AWS | S3 Bucket | Logging disabled | Medium | Enable appropriate logging |
+| Azure | Blob Storage | Anonymous access* | Critical | Disable anonymous access |
+| Azure | Blob Storage | Data protection* | High | Enable protection mechanisms |
 
-
-RESULT
+# RESULT
 The storage assets in AWS S3 and Microsoft Azure Blob Storage were identified and analyzed. Various security configurations, vulnerabilities, threats, likelihood, and impacts were evaluated. Risk scores were calculated using the Likelihood × Impact method, and appropriate security mitigation measures were recommended.
