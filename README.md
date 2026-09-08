@@ -1,4 +1,4 @@
-## EXPERIMENT 4
+<img width="1907" height="853" alt="Screenshot 2026-09-08 225358" src="https://github.com/user-attachments/assets/3ba9d1da-41bf-4421-bc78-81dc32aac283" />## EXPERIMENT 4
 ## ASSET-ORIENTED RISK ASSESSMENT OF STORAGE ASSETS IN AWS AND AZURE
 # Objective
 To identify storage assets in AWS S3 and Microsoft Azure Blob Storage, identify possible vulnerabilities and threats, and assess their likelihood, impact, and risk level.
@@ -203,7 +203,19 @@ Unrestricted network access can increase the attack surface.
 Screenshot: Networking configuration.
 
 # PART D — AZURE RISK ASSESSMENT
-<img width="1907" height="853" alt="Screenshot 2026-09-08 225358" src="https://github.com/user-attachments/assets/efd50f1d-a4c9-47c9-964e-779a314a33ce" />
+
+
+| Security Control | AWS S3 | Azure Blob Storage |
+| :--- | :--- | :--- |
+| Public access control | Block Public Access | Anonymous access control |
+| Encryption | SSE-S3 / SSE-KMS | Azure Storage encryption |
+| Versioning | S3 Versioning | Blob Versioning |
+| Data recovery | Versioning / other controls | Soft Delete / Versioning |
+| Access control | IAM / Bucket policies | RBAC / Access policies |
+| Logging/Monitoring | S3 logging / Cloud monitoring | Azure monitoring/logging |
+| Network security | Bucket/network controls | Storage networking / private endpoints |
+
+
 
 # PART E — COMPARISON OF AWS AND AZURE
 Prepare a final comparison.
