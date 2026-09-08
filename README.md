@@ -1,4 +1,3 @@
-<img width="1907" height="853" alt="Screenshot 2026-09-08 225358" src="https://github.com/user-attachments/assets/3ba9d1da-41bf-4421-bc78-81dc32aac283" />## EXPERIMENT 4
 ## ASSET-ORIENTED RISK ASSESSMENT OF STORAGE ASSETS IN AWS AND AZURE
 # Objective
 To identify storage assets in AWS S3 and Microsoft Azure Blob Storage, identify possible vulnerabilities and threats, and assess their likelihood, impact, and risk level.
