@@ -103,21 +103,14 @@ Screenshot: Server Access Logging.
 After checking the S3 configuration, identify possible vulnerabilities and threats.
 Risk Formula
 Risk Score = Likelihood × Impact
-Use the following scale.
-Likelihood
-Score	Description
-1	Very Low
-2	Low
-3	Medium
-4	High
-5	Very High
-Sample AWS Risk Assessment
-Students must use their actual configuration while preparing the final table.
-Asset	Vulnerability	Threat	Likelihood	Impact	Risk Score	Risk Level	Recommended Mitigation
-S3 Bucket	Versioning disabled	Accidental/malicious data deletion	3	4	12	High	Enable versioning
-S3 Bucket	Access logging disabled	Difficult investigation of unauthorized activity	3	3	9	Medium	Enable appropriate logging
-S3 Bucket	Public access enabled*	Unauthorized data access	4	5	20	Critical	Enable Block Public Access
-S3 Bucket	Weak access permissions*	Unauthorized modification/access	3	4	12	High	Apply least privilege
+
+| Asset | Vulnerability | Threat | Likelihood | Impact | Risk Score | Risk Level | Recommended Mitigation |
+| :--- | :--- | :--- | :---: | :---: | :---: | :--- | :--- |
+| S3 Bucket | Versioning disabled | Accidental/malicious data deletion | 3 | 4 | 12 | High | Enable versioning |
+| S3 Bucket | Access logging disabled | Difficult investigation of unauthorized activity | 3 | 3 | 9 | Medium | Enable appropriate logging |
+| S3 Bucket | Public access enabled* | Unauthorized data access | 4 | 5 | 20 | Critical | Enable Block Public Access |
+| S3 Bucket | Weak access permissions* | Unauthorized modification/access | 3 | 4 | 12 | High | Apply least privilege |
+
 # PART C — MICROSOFT AZURE BLOB STORAGE
 # Step 9: Login to Azure
 1.	Open the Azure Portal. 
