@@ -203,12 +203,8 @@ Unrestricted network access can increase the attack surface.
 Screenshot: Networking configuration.
 
 # PART D — AZURE RISK ASSESSMENT
-Prepare the following table using the actual configuration observed.
-Asset	Vulnerability	Threat	Likelihood	Impact	Risk Score	Risk Level	Recommended Mitigation
-Azure Blob Storage	Anonymous access enabled*	Unauthorized data access	4	5	20	Critical	Disable anonymous access
-Azure Storage	Data protection disabled*	Permanent data loss	3	4	12	High	Enable appropriate protection
-Azure Storage	Excessive permissions*	Unauthorized modification	3	4	12	High	Apply least privilege
-Azure Storage	Unrestricted network access*	External attack/access	3	4	12	High	Restrict network access
+<img width="1907" height="853" alt="Screenshot 2026-09-08 225358" src="https://github.com/user-attachments/assets/efd50f1d-a4c9-47c9-964e-779a314a33ce" />
+
 # PART E — COMPARISON OF AWS AND AZURE
 Prepare a final comparison.
 Security Control	AWS S3	Azure Blob Storage
